@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fil Rouge preparation </title>
+</head>
+<body>
+    <h1>Day 2 of the first Week</h1>
+    <script>
+    // Exercices
+        // Faciles
+
+        class Voiture{
+            constructor(marque){
+                this.marque=marque;
+            }
+        }
+
+        let car = new Voiture("miniCoper");
+
+        console.log(car);
+
+        // Moyens
+
+        class Animal{
+            constructor(nom){
+                this.nom = nom ;
+            }
+
+            parler(){
+                console.log("L'animal fait un son");
+                
+            }
+        }
+
+        let Lion = new Animal('Lion');
+        let Chat = new Animal('Chat');
+
+        console.log(Lion.nom);
+        console.log(Chat.nom);
+
+        Lion.parler();
+        Chat.parler();
+
+        class Rectangle {
+            constructor(largeur,longueur ){
+                this.largeur =largeur;
+                this.longueur  =longueur ;
+            }
+            aire(){
+                return this.largeur*this.longueur;
+            }
+        }
+
+        let rectangle = new Rectangle(4,7);
+
+        console.log(rectangle.aire());
+
+        class Personne {
+            constructor(nom, age){
+                this.nom = nom;
+                this.age=age;
+            }
+
+            saluer(){
+                console.log("salam , My name is ",this.nom);
+                
+            }
+        }
+
+        let personne1 = new Personne('saad' , 17);
+        let personne2 = new Personne('Ilham' , 25);
+
+        personne1.saluer();
+        personne2.saluer();
+
+        
+        
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>
