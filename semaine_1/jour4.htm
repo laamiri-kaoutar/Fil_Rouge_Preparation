@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fil Rouge preparation </title>
+</head>
+<body>
+    <h1>Day 4 of the first Week</h1>
+    <script>
+    // Exercices
+        // Faciles
+        function bonjour(){
+            console.log("Buongiorno !!");
+            
+        }
+
+
+        function  addition(a, b){
+            return a+b;
+        }
+
+        console.log(addition(10,1));
+        
+        // Moyens
+
+        function isEven(number) {
+            if (number%2 === 0 ) {
+                return true
+            }
+            return false
+        } 
+
+        console.log(isEven(726));
+        
+        function factorielleLoop(n){
+            let factorielle =1 ;
+          
+           while (n != 0 ) {
+             factorielle *= n;
+             n--;
+           }
+           return factorielle;
+        }
+
+        function factorielle(n){
+            if (n === 0) {
+                return 1   
+            }
+            return n*factorielle(n-1)
+        }
+
+        console.log(factorielleLoop(11));
+        console.log(factorielle(11));
+
+        
+        function  maximum(a, b) {
+            if (a<b) {
+                return b  
+            } else if (a>b) {
+                return a
+            }
+            return "the two numbers are equal"
+        }
+
+        console.log(maximum(6,9));
+        
+
+        function bienvenue(nom){
+            console.log( "hello " , nom);
+            
+        }
+
+        bienvenue("kaoutar");
+
+        // Difficiles
+
+        function sommeTableau(tableau){
+            let summe = 0;
+            for (let i = 0; i < tableau.length; i++) {
+                summe += tableau[i];   
+            }
+            return summe;
+        }
+
+        console.log(sommeTableau([1,1,1,1,1,1,1,1,1,1]));
+
+
+        function inverserChaine(chaine){
+            console.log(chaine);
+            
+            let inverserChaine = [];
+            let n = chaine.length -1;
+
+            for (let i = n; i >= 0 ; i--) {
+                inverserChaine.push(chaine[i]) ;    
+            }
+
+            return inverserChaine.join('');
+        }
+
+        console.log(inverserChaine('kaoutar'));
+
+        function estPalindrome(chaine){            
+            let inverserChaine = [];
+            let n = chaine.length -1;
+
+            for (let i = n; i >= 0 ; i--) {
+                inverserChaine.push(chaine[i]) ;    
+            }
+
+            return inverserChaine.join('') === chaine;
+        }
+
+        console.log(estPalindrome('tenet'));
+        console.log(estPalindrome('kaputar'));
+
+
+        function inverserChaineWithSplit(chaine) {
+            return chaine.split('').reverse().join('');
+        }
+
+        function isPalindrome(chaine) {
+            return chaine.split('').reverse().join('') === chaine;
+        }
+
+        console.log("id the word 'tenet' a palindrome " , isPalindrome('tenet'));
+
+        
+        
+        
+
+    
+    </script>
+</body>
+</html>
